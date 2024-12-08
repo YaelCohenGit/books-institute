@@ -1,0 +1,20 @@
+{
+    "about": "Sobre Nosotros",
+    "books": "Libros",
+    "contact": "Contacto",
+    "heroTitle": "En memoria bendita de Aharon HaCohen",
+    "ctaButton": "Explorar Nuestros Libros",
+    "featuredBooks": "Libros Destacados",
+    "aboutTitle": "Sobre Nosotros",
+    "aboutText": [
+        "Instituto Bene Aharon para la publicación y difusión de enseñanzas de la Torá y el apoyo a estudiosos de la Torá.",
+        "Libros disponibles en",
+        "30 Calle Givat Shaul, Jerusalén. Tel: 972-2-6518122",
+        "Yam HaTorah, 1573 E10 ST Brooklyn, N.Y. Tel: 917-428-9526",
+        "Los libros también están disponibles en librerías seleccionadas en todo el mundo",
+        "Si tienes alguna pregunta, puedes enviar un correo a: r.cohen49@gmail.com"
+    ],
+    "contactTitle": "Contacto",
+    "contactLabels": ["Nombre", "Correo Electrónico", "Mensaje"],
+    "contactButton": "Enviar"
+}

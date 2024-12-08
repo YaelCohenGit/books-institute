@@ -1,0 +1,441 @@
+/* בסיס האתר */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff7e6;
+    /* רקע בהיר עם גוון יוקרתי */
+    color: #4b1c25;
+    /* צבע טקסט בגוון בורדו */
+    direction: rtl;
+}
+
+/* כותרת עליונה */
+header {
+    background-color: #4b1c25;
+    /* בורדו כהה */
+    color: #f5e0b5;
+    /* זהב עדין */
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #f5e0b5;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f5e0b5;
+}
+
+.hero {
+    text-align: center;
+    background: url("./img/‏‏goldi-background.PNG") no-repeat center center;
+    background-size: cover;
+    color: #4b1c25;
+    padding: 200px 20px;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #4b1c25;
+    color: #f5e0b5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero .cta-button:hover {
+    background: url("./img/‏‏goldi-background.PNG") no-repeat center center;
+    transform: scale(1.05);
+    color: #4b1c25;
+}
+
+/* אזור הספרים */
+.books {
+    background-color: #4b1c25;
+    /* בורדו כהה */
+    color: #f5e0b5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.books h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    /* תצוגה אנכית */
+    align-items: center;
+    width: 220px;
+    background-color: #4b1c25;
+    /* בורדו כהה */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.book-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #f5e0b5;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff7e6;
+    /* רקע זהוב בהיר */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #4b1c25;
+    /* בורדו כהה */
+    color: #f5e0b5;
+    /* זהב */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #80273c;
+    /* גוון בורדו בהיר יותר */
+}
+
+/* כותרת תחתונה */
+footer {
+    background-color: #4b1c25;
+    color: #f5e0b5;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.book-image {
+    width: 100%;
+    height: 300px;
+    /* להתאים לגובה שכולל את כל התמונה */
+    background-size: contain;
+    /* תצוגת כל התמונה */
+    background-repeat: no-repeat;
+    /* מניעת חזרה */
+    background-position: center;
+    /* מיקוד התמונה */
+}
+
+.book-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-details h3 {
+    color: #f5e0b5;
+    font-size: 1.5rem;
+}
+
+.book-details p {
+    color: #f5e0b5;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+button.view-toc {
+    margin-top: 10px;
+    /* ריווח נוסף כדי להפריד מהטקסט */
+    padding: 10px 20px;
+    background-color: #f5e0b5;
+    /* זהב */
+    color: #4b1c25;
+    /* בורדו */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.view-toc:hover {
+    background: url("./img/‏‏goldi-background.PNG") no-repeat center center;
+    color: #4b1c25;
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+.about {
+    background-color: #f5e0b5;
+    /* רקע זהוב בהיר */
+    color: #4b1c25;
+    /* טקסט בגוון בורדו */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* הצללה להוספת עומק */
+    margin: 30px auto;
+    max-width: 800px;
+    /* למרכז ולמנוע תוכן רחב מדי */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    /* כותרת גדולה ומודגשת */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* להפוך את הטקסט לאותיות גדולות */
+    color: #4b1c25;
+    /* צבע בורדו */
+    border-bottom: 2px solid #4b1c25;
+    /* קו תחתון */
+    display: inline-block;
+    /* למרכז את הקו */
+    padding-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    /* טקסט נוח לקריאה */
+    line-height: 1.8;
+    /* ריווח שורות */
+    margin-bottom: 15px;
+    /* ריווח בין הפסקאות */
+}
+
+.about a {
+    color: #4b1c25;
+    /* קישור בגוון בורדו */
+    text-decoration: underline;
+    /* להבליט את הקישור */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.about a:hover {
+    color: #80273c;
+    /* גוון בהיר יותר */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.contact {
+    text-align: center;
+    margin: 50px auto;
+    /* רווח מעל ומתחת, ומרכז רוחבי */
+    padding: 20px;
+    /* רווח פנימי */
+    max-width: 600px;
+    /* רוחב מקסימלי */
+    background-color: #f5e0b5;
+    /* צבע רקע */
+    border: 1px solid #f5e0b5;
+    /* מסגרת עדינה */
+    border-radius: 10px;
+    /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* צל */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    /* כותרת גדולה ומודגשת */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* להפוך את הטקסט לאותיות גדולות */
+    color: #4b1c25;
+    /* צבע בורדו */
+    border-bottom: 2px solid #4b1c25;
+    /* קו תחתון */
+    display: inline-block;
+    /* למרכז את הקו */
+    padding-bottom: 10px;
+}
+
+
+
+.contact p {
+    font-size: 1rem;
+    color: #4b1c25;
+    margin-bottom: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    /* מִלֵּא את הרוחב */
+    margin-bottom: 10px;
+    /* רווח מתחת לכל שדה */
+    padding: 10px;
+    /* רווח פנימי */
+    border: 1px solid #ffffff;
+    /* מסגרת */
+    border-radius: 5px;
+    /* פינות מעוגלות */
+}
+
+#s {
+    text-align: center;
+    background: url("./img/‏‏goldi-background.PNG") no-repeat center center;
+    background-size: cover;
+    color: #4b1c25;
+    padding: 20px 20px;
+}
+
+
+html[lang="he"] {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="he"] body {
+    font-family: "Arial", sans-serif; /* ניתן לשנות לגופן שמתאים לעברית */
+}
+
+#bsd {
+color: rgb(255, 255, 255);
+}
+
+
+/* עיצוב עבור Chrome, Edge ודפדפנים מבוססי WebKit */
+::-webkit-scrollbar {
+    width: 16px; /* עובי גלילה אנכי */
+    height: 16px; /* עובי גלילה אופקי */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg,  #4b1c25, #FFD700); /* מעבר צבע בורדו לזהב */
+    border-radius: 8px; /* פינות מעוגלות */
+    border: 3px solid #f1f1f1; /* מסגרת בהירה */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg,  #4b1c25, #FFC300); /* שינוי גוון בעת ריחוף */
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f4e3; /* צבע רקע בהיר למסלול */
+    border-radius: 8px; /* פינות מעוגלות למסלול */
+    border: 2px solid  #4b1c25; /* מסגרת מסלול בצבע בורדו */
+}
+
+/* עיצוב עבור Firefox */
+html {
+    scrollbar-color:  #4b1c25 #f8f4e3; /* פס גלילה בורדו ומסלול בצבע רקע */
+    scrollbar-width: auto; /* עובי סטנדרטי */
+}
+
+
+
+
+
